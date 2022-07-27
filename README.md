@@ -9,17 +9,17 @@ Semantic grids are a succinct and convenient approach to represent the environme
 
 Results on the NuScenes validation split. We compare the Intersection over Union (**IOU**) of the generated semantic grids with the competing approaches in validation set. Best results are presented in **bold** font, second best with 🔹Blue.
 
-| Models                         |  Vehicle  | Drivable area | Line divider |  Walkway  |
+| Models                         |  Vehicle  | Drivable area | Lane divider |  Walkway  |
 |--------------------------------|:---------:|:-------------:|:------------:|:---------:|
 | Lift-Splat-Shoot (pre-trained) |   32.80   |       -       |       -      |     -     |
 | Lift-Splat-Shoot *             |   28.94   |     61.98     |   **37.41**  |   🔹50.07   |
 | Pillar feature Net             |   23.43   |     69.19     |     26.05    |   30.57   |
-| TFGrid (concat)                |   🔹32.88   |     🔹74.18     |     30.41    |   43.78   |
+| TFGrid (concat)                | 🔹32.88   |     🔹74.18     |     30.41    |   43.78   |
 | TFGrid (ours)                  | **35.88** |   **78.87**   |    🔹35.70    | **50.98** |
 
 We compare the IOU of the competing approaches in only Night conditions and only Rain conditions. Best results are presented in **bold** font, second best in 🔹Blue.
 
-| Class                          |  Vehicle  |           | Drivable area |           | Line divider |           |  Walkway  |           |
+| Class                          |  Vehicle  |           | Drivable area |           | Lane divider |           |  Walkway  |           |
 |--------------------------------|:---------:|:---------:|:-------------:|:---------:|:------------:|:---------:|:---------:|:---------:|
 | Models                         |   Night   |    Rain   |     Night     |    Rain   |     Night    |    Rain   |   Night   |    Rain   |
 | Lift-Splat-Shoot (pre-trained) |   31.06   |   🔹34.06   |       -       |     -     |       -      |     -     |     -     |     -     |
