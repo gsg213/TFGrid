@@ -38,6 +38,7 @@ Comparison between ground truth and semantic grid predictions for vehicles (top 
 A scene from nuScenes validation split is used to validate vehicle, drivable_area and walkway classes.
 <img src="./imgs/S1.gif">
 
+[Video release](https://youtu.be/j2nBqtwcCOo)
 Source code to be released upon publication ICARCV 2022.
 
 
