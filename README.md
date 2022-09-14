@@ -40,5 +40,16 @@ A scene from nuScenes validation split is used to validate vehicle, drivable_are
 
 [Video release](https://youtu.be/j2nBqtwcCOo)
 
+## Use TransFuseGrid
 
-Source code to be released upon publication ICARCV 2022.
+In order to train TransFuseGrid for Drivable_area class, use the following command:
+
+```
+python main.py train_multigpu_2T -s trainval -c ./configs/config_nT_da.py --logdir ./runs/v2T_da --gpus 8
+```
+
+This script allows training using classes: vehicle, drivable_area, walkway, lane_divider, ped_crossing and stop_line.
+
+## Acknowledgement
+
+This model repo is created using Philion and Fidler's work [Lift, Splat, Shoot](https://github.com/nv-tlabs/lift-splat-shoot). Pillar feature net based on [GndNet](https://github.com/anshulpaigwar/GndNet) work. And multi-modal fuser transformer based on Prakash et al work [TransFuser](https://github.com/autonomousvision/transfuser).
