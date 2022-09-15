@@ -35,7 +35,7 @@ Comparison between ground truth and semantic grid predictions for vehicles (top 
 ![Comparison](imgs/comparison.png)
 
 ## Scene prediction visualization
-A scene from nuScenes validation split is used to validate vehicle, drivable_area and walkway classes.
+A scene from nuScenes validation split is used to validate vehicle, drivable_area, lane_divider and walkway classes.
 <img src="./imgs/S1.gif">
 
 [Video release](https://youtu.be/j2nBqtwcCOo)
